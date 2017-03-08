@@ -1,0 +1,14 @@
+
+
+
+<div class="card">
+  <div class="card-header">
+    Wyszukaj
+  </div>
+
+  <div class="card-block card-info">
+    <div class="form-group" *ngFor="let item of options">
+      <input type="text" [name]="item" placeholder="{{item}}" (input)="updateFilters($event.target)" class="form-control">
+    </div>
+  </div>
+</div>

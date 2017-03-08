@@ -1,3 +1,16 @@
-<h1>
-  {{title}}
-</h1>
+<nav class="navbar navbar-toggleable-sm navbar-inverse bg-primary">
+  <div class="container">
+    <a class="navbar-brand" routerLink="" routerLinkActive="active">Home</a>
+    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+      <div class="navbar-nav">
+        <a class="nav-item nav-link" routerLink="movies" routerLinkActive="active">Filmiki</a>
+      </div>
+    </div>
+  </div>
+</nav>
+
+<router-outlet></router-outlet>
+
+<template ngbModalContainer></template>
+
+

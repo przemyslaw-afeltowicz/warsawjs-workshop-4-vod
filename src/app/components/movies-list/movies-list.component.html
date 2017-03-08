@@ -1,0 +1,15 @@
+<div class="row">
+
+  <div class="col-md-6 card" *ngFor="let item of items | search:filters">
+    <div class="card-header">
+      {{ item.name }}
+    </div>
+    <div class="card-block">
+      <app-iframe [url]="item.url"></app-iframe>
+    </div>
+
+    <button (click)="removeItem(item.$key)">Usuń</button>
+
+  </div>
+</div>
+
